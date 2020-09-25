@@ -1,0 +1,67 @@
+[
+    {
+        "title": "안녕하세요",
+        "options": [ "bye","hello", "I'm sorry" ],
+        "correctOption": "hello"
+    },
+
+    {
+        "title": "둘",
+        "options": ["two", "one", "three"],
+        "correctOption": "two"
+    },
+
+    {
+        "title": "학생",
+        "options": ["professor", "student", "librarian"],
+        "correctOption": "student"
+    },
+
+    {
+        "title": "커피",
+        "options": ["coffee", "tea", "water"],
+        "correctOption": "coffee"
+    },
+
+    {
+        "title": "사과",
+        "options": ["apple", "watermelon", "orange"],
+        "correctOption": ""
+    },
+
+    {
+        "title": "선생님",
+        "options": ["professor", "student", "cook"],
+        "correctOption": "professor"
+    },
+
+    {
+        "title": "한국",
+        "options": ["japan", "china", "korea"],
+        "correctOption": "korea"
+    },
+
+    {
+        "title": "운동",
+        "options": ["cook", "hiking", "exercise"],
+        "correctOption": "exercise"
+    },
+
+    {
+        "title": "하나",
+        "options": ["three", "two", "one"],
+        "correctOption": "one"
+    },
+
+    {
+        "title": "음식",
+        "options": ["cookie", "food", "clothe"],
+        "correctOption": "food"
+    },
+
+    {
+        "title": "집",
+        "options": ["house", "ten", "mountain"],
+        "correctOption": "house"
+    }
+]
