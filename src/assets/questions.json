@@ -41,11 +41,7 @@
         "correctOption": "korea"
     },
 
-    {
-        "title": "운동",
-        "options": ["cook", "hiking", "exercise"],
-        "correctOption": "exercise"
-    },
+
 
     {
         "title": "하나",

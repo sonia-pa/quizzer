@@ -1,6 +1,25 @@
-<p>result works!</p>
-{{state| json}}
-<!-- 
-{{correctCount}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <h1 class="display-4">Quiz Score: </h1>
+            <p> 
+                Correct : {{correctCount}}
+            </p>
 
-{{incorrectCount}} -->
+            <p>
+                Incorrect : {{incorrectCount}}
+            </p>
+            <!-- animation according to result -->
+
+            <div id="message">
+                <div *ngIf="correctCount>=6">
+                   Your efforts are paying off
+                </div>
+
+                <div *ngIf="correctCount<6">
+                    Practice makes perfect!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

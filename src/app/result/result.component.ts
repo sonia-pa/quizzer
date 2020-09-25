@@ -21,8 +21,9 @@ export class ResultComponent implements OnInit {
 
     this.state = history.state;
     console.log(typeof(this.state));
-    console.log(JSON.stringify(this.state) );
-    
+    console.log(JSON.stringify(this.state["correct"]) );
+    this.correctCount = this.state["correct"];
+    this.incorrectCount = this.state["incorrect"];
 
   }
 

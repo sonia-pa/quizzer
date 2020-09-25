@@ -24,17 +24,18 @@ export class QuizComponent implements OnInit {
         this.questions = dt 
       }
     )
+    
   }
-
+  
   onClick(val) {
     this.wasEnable = true;
     this.successMessage = null;
     this.errorMessage = null;
-    if(val != this.questions[this.index].correctOption){
-      this.correctCount++;
-      this.errorMessage = "Correct solution: \n" + this.questions[this.index].correctOption;
-    }else {
+    if(val != this.questions[this.index].correctOption && this.index <= this.questions.length-1){
       this.incorrentCount++;
+      this.errorMessage = "Correct solution: \n" + this.questions[this.index].correctOption;
+    }else if(val == this.questions[this.index].correctOption && this.index <= this.questions.length-1) {
+      this.correctCount++;
       this.successMessage = "Correct!"
     }
 
@@ -42,12 +43,10 @@ export class QuizComponent implements OnInit {
 
   onContinue() {
     this.wasEnable = false;
-    if(this.index < this.questions.length ){
-      this.index++;
-    }else{
-      //navigate to score page landing
-      // this.router.navigate(['result', {state: {correct: 0, incorrect: this.incorrentCount}}]);
+    if(this.index == this.questions.length ){
       this.router.navigateByUrl('/result',{state: {correct: this.correctCount, incorrect: this.incorrentCount}} )
+    }else{
+      this.index++;
     }
   }
 
